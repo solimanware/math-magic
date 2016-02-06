@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>MM Game</title>
+      <!--Cordova JS for online building-->
+      <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+      <!--Styles and materialize-->
+      <link rel="stylesheet" href="css/game.css">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Media API-->
+      <script type="text/javascript" charset="utf-8" src="js/phonegap-sound-api.js"></script> 
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="font/google-material/material-icons.css" rel="stylesheet" />
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+   </head>
+   <body>
+     <content>
+         <div id="bar" class="progress"></div>
+         <div class="score">
+             <h1>Score</h1> 
+             <span id="score">0</span>       
+         </div>
+         <div ontouchstart="location.href='main.html';playAudio('/android_asset/www/sounds/pause.mp3');" class="actions">
+             <i id="start-pause" class="small material-icons">pause</i>
+         </div>
+          <div class="center">
+              <h1 id="num1">0</h1>
+              <h1 id="sign">+</h1>
+              <h1 id="num2">0</h1>
+          </div>
+          <h1 id="equal">=</h1>
+          <hr>
+          <h1 id="result">0</h1>
+          <div class="btns">
+              <button ontouchstart="playAudio('/android_asset/www/sounds/correct.mp3');" id="correct" class="answer waves-effect waves-light btn-large teal darken-4"><i class="large material-icons left">thumb_up</i>Correct</button>
+              <button ontouchstart="playAudio('/android_asset/www/sounds/wrong.mp3');" id="wrong"   class="answer waves-effect waves-light btn-large red" >wrong<i class="large material-icons right">thumb_down</i></button>
+          </div>
+
+          <br>
+          <br>
+
+
+     </content>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!--The MM Game JS-->
+      <script type="text/javascript" src="js/MM.js"></script>
+      <script type="text/javascript" src="js/core.js"></script>
+   </body>
+</html>

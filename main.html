@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App Index</title>
+    <!--Cordova JS for online building-->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <!--Styles and materialize-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="font/google-material/material-icons.css" rel="stylesheet" />
+    <!--Media API-->
+    <script type="text/javascript" charset="utf-8" src="js/phonegap-sound-api.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <content>
+     <img class="logo" src="img/logo.png" alt="">
+     
+     <div class="parentbox">
+    <div class="childbox">
+        <div class="btns">
+         <a ontouchstart="playAudio('/android_asset/www/sounds/play.mp3');" href="game.html" id="play" class="waves-effect waves-light btn-large center-align padding"><i class="material-icons left ">stay_primary_portrait</i>Play Now</a>
+         <a ontouchstart="playAudio('/android_asset/www/sounds/play.mp3');" href="topscore.html" id="topScore" class="waves-effect waves-light btn-large center-align padding"><i class="material-icons left ">trending_up</i>Top Score</a>
+         <a ontouchstart="playAudio('/android_asset/www/sounds/play.mp3');" href="https://play.google.com/store/apps/details?id=com.brilliantapp.mm" id="rate" class="waves-effect waves-light btn-large center-align padding"><i class="material-icons left">star_rate</i>Rate Please</a>
+     </div>
+    </div>
+</div>
+ </content> 
+     <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
