@@ -57,8 +57,7 @@ function gameOver() {
 //}
 
 $(document).ready(function() {
- 
-  $(".answer").click(function() {
+  $(".answer").on('touchstart', function(){
     $("#bar").stop();
     $("#bar").css("width", "100%");
     $("#bar").animate({
