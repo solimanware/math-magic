@@ -56,14 +56,16 @@ function gameOver() {
 //    setTimeout(function(){ alert("Game Timer Over"); }, 3000);
 //}
 
-(function timeBar() {
-    $('.answer').on('touchstart', function(){
-          $('.progress').animate({ width: '0%' }, 3000); 
-       });
-    $('.answer').on('touchend', function(){
-          $('.progress').animate({ width: '100%' }, 0); 
-       });
-})();
+$(document).ready(function() {
+ 
+  $(".answer").click(function() {
+    $("#bar").stop();
+    $("#bar").css("width", "100%");
+    $("#bar").animate({
+      width: '0%'
+    }, 3000);
+  });
+});
 
 
 // Main function
