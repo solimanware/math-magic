@@ -1,8 +1,8 @@
 /** vars **/
 var level = 1;
 var score = 0; //
-var time  = 5000 ; // milliseconds
-var timeBar  = 5000 ; // milliseconds
+var time  = 3000 ; // milliseconds
+var timeBar  = 3000 ; // milliseconds
 var pause = false;
 var lives = 3;
 var sign  = "+";
@@ -57,7 +57,7 @@ function gameOver() {
             closeOnCancel: false }, 
              function(isConfirm){   
             if (isConfirm) {
-                         window.location.href='game.html'  
+                         window.location.href='game2.html'  
                 } else { window.location.href='main.html' ;
         } });
 
@@ -78,22 +78,22 @@ function myTimer(){
             closeOnCancel: false }, 
              function(isConfirm){   
             if (isConfirm) {
-                         window.location.href='game.html'  
+                         window.location.href='game2.html'  
                 } else { window.location.href='main.html' ;
-        } }); }, 5000);
+        } }); }, 3000);
 }
 function myStopFunction() {
     clearInterval(myTimer);
 }
 
 $(document).ready(function() {
-    $("#bar").animate({width: '0%'}, 5000);
+    $("#bar").animate({width: '0%'}, 3000);
     $(".answer").on('touchstart', function(){
         $("#bar").stop();
         $("#bar").css("width", "100%");
         $("#bar").animate({
           width: '0%'
-        }, 5000);
+        }, 3000);
         myStopFunction();
         againTimer();
         });
@@ -113,9 +113,9 @@ function againTimer(){
             closeOnCancel: false }, 
              function(isConfirm){   
             if (isConfirm) {
-                         window.location.href='game.html'  
+                         window.location.href='game2.html'  
                 } else { window.location.href='main.html' ;
-        } }); }, 5000);
+        } }); }, 3000);
 }
 
 
