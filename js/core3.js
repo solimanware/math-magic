@@ -45,7 +45,7 @@ function wrongAnswer() {
 }
 
 function gameOver() {
-    myStopFunction();
+    clearInterval(myTimer);
     swal({   
             title: "Your Answer was Wrong",
             text: "You lost and your score is " + score,   
@@ -55,11 +55,11 @@ function gameOver() {
             confirmButtonText: "Play again",   
             cancelButtonText: "X",   
             closeOnConfirm: false,   
-            closeOnCancel: true }, 
+            closeOnCancel: false }, 
              function(isConfirm){   
             if (isConfirm) {
-                         window.location.href='game3.html'  
-                } else { //window.location.href='main.html' ;
+                         window.location.href='game.html'  
+                } else { window.setTimeout(function(){window.location.href = "main.html"},10000);
         } });
 
 }
