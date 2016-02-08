@@ -45,6 +45,7 @@ function wrongAnswer() {
 }
 
 function gameOver() {
+    myStopFunction();
     swal({   
             title: "Your Answer was Wrong",
             text: "You lost and your score is " + score,   
@@ -54,7 +55,7 @@ function gameOver() {
             confirmButtonText: "Play again",   
             cancelButtonText: "X",   
             closeOnConfirm: false,   
-            closeOnCancel: false }, 
+            closeOnCancel: true }, 
              function(isConfirm){   
             if (isConfirm) {
                          window.location.href='game.html'  
