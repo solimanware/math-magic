@@ -58,7 +58,7 @@ function gameOver() {
              function(isConfirm){   
             if (isConfirm) {
                          window.location.href='game.html'  
-                } else { window.location.href='main.html' ;
+                } else { //window.location.href='main.html' ;
         } });
 
 }
