@@ -46,7 +46,7 @@ function wrongAnswer() {
 
 function gameOver() {
     swal({   
-            title: "Your Time is Over",
+            title: "Your Answer was Wrong",
             text: "You lost and your score is " + score,   
             type: "warning",   
             showCancelButton: true,   
