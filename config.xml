@@ -2,8 +2,8 @@
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "com.brilliantapp.mm"
-		versionCode="1.0"
-		version   = "5">
+		versionCode="1.1"
+		version   = "6">
 		<name>Math Magic</name>
 		<description>
 An interactive game dealing with numbers try to get best score		</description>
@@ -14,9 +14,9 @@ Osama Soliman
    		<access origin="*" />
 
 	    <preference name="permissions" value="none"/>
-	    <preference name="android-build-tool" value="gradle" /> 
+	    <preference name="android-build-tool" value="gradle" />
 	    <gap:plugin name="cordova-plugin-admobpro" source="npm" />
-	    
+
 		<preference name="phonegap-version" value="cli-5.2.0" />
 		<preference name="orientation" value="default" />
 		<preference name="fullscreen" value="false" />
@@ -45,7 +45,7 @@ Osama Soliman
 		<preference name="BackgroundColor" value="0x000000"/>
 		<preference name="KeepRunning" value="true"/>
 		<preference name="DisallowOverscroll" value="false"/>
-		<preference name="LoadingDialog" value=","/> 
+		<preference name="LoadingDialog" value=","/>
 		<preference name="LoadUrlTimeoutValue" value="20000" />
 		<preference name="disable-cursor" value="false" />
 		<gap:platform name="ios" />
