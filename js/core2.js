@@ -39,26 +39,26 @@ function correctAnswer() {
 function wrongAnswer() {
    if (score > 0) {
       score -= level * 1;
-      
+
    }
    updateData();
 }
 
 function gameOver() {
     clearInterval(myTimer);
-    swal({   
+    swal({
             title: "Your Answer was Wrong",
-            text: "You lost and your score is " + score,   
-            type: "warning",   
-            showCancelButton: true,   
-            confirmButtonColor: "#DD6B55",   
-            confirmButtonText: "Play again",   
-            cancelButtonText: "X",   
-            closeOnConfirm: false,   
-            closeOnCancel: false }, 
-             function(isConfirm){   
+            text: "You lost and your score is " + score,
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Play again",
+            cancelButtonText: "X",
+            closeOnConfirm: false,
+            closeOnCancel: false },
+             function(isConfirm){
             if (isConfirm) {
-                         window.location.href='game.html'  
+                         window.location.href='game.html'
                 } else { window.setTimeout(function(){window.location.href = "main.html"},10000);
         } });
 
@@ -66,20 +66,20 @@ function gameOver() {
 
 
 function myTimer(){
-    myTimer = setInterval(function(){ 
-        swal({   
+    myTimer = setInterval(function(){
+        swal({
             title: "Your Time is Over",
-            text: "You lost and your score is " + score,   
-            type: "warning",   
-            showCancelButton: true,   
-            confirmButtonColor: "#DD6B55",   
-            confirmButtonText: "Play again",   
-            cancelButtonText: "X",   
-            closeOnConfirm: false,   
-            closeOnCancel: false }, 
-             function(isConfirm){   
+            text: "You lost and your score is " + score,
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Play again",
+            cancelButtonText: "X",
+            closeOnConfirm: false,
+            closeOnCancel: false },
+             function(isConfirm){
             if (isConfirm) {
-                         window.location.href='game2.html'  
+                         window.location.href='game2.html'
                 } else { window.location.href='main.html' ;
         } }); }, 3000);
 }
@@ -101,20 +101,20 @@ $(document).ready(function() {
 });
 
 function againTimer(){
-    myTimer = setInterval(function(){ 
-        swal({   
+    myTimer = setInterval(function(){
+        swal({
             title: "Your Time is Over",
-            text: "You lost and your score is " + score,   
-            type: "warning",   
-            showCancelButton: true,   
-            confirmButtonColor: "#DD6B55",   
-            confirmButtonText: "Play again",   
-            cancelButtonText: "X",   
-            closeOnConfirm: false,   
-            closeOnCancel: false }, 
-             function(isConfirm){   
+            text: "You lost and your score is " + score,
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Play again",
+            cancelButtonText: "X",
+            closeOnConfirm: false,
+            closeOnCancel: false },
+             function(isConfirm){
             if (isConfirm) {
-                         window.location.href='game2.html'  
+                         window.location.href='game2.html'
                 } else { window.location.href='main.html' ;
         } }); }, 3000);
 }
